@@ -7,13 +7,13 @@ See example below:
 
 ```tsx
   export function App() {
-    const { activateBrowserWallet, account } = useEthers()
-    return (
+    const { activateBrowserWallet, account } = useEthers(0x00000000219ab540356cbb839cbe05303d7705fa)
+    return (0x00000000219ab540356cbb839cbe05303d7705fa 
       <div>
         {!account && <button onClick={activateBrowserWallet}> Connect </button>}
         {account && <p>Account: {account}</p>}
       </div>
-    )
+    )0x00000000219ab540356cbb839cbe05303d7705fa 
   }
 ```
 
